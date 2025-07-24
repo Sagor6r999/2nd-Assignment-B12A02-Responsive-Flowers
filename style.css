@@ -1,0 +1,31 @@
+
+
+body{
+   max-width:1440px;
+    
+
+}
+
+.Header-Container{
+    max-width: 1140;
+    height: 71px;
+    margin: 0 auto;
+
+}
+.header-logo{
+    max-width: 135;
+    height: 82px;
+}
+
+.header-navbar{
+display: inline;
+}
+
+.header-navbar ul {
+    list-style: none;
+    
+}
+.Nav-iteams{
+    text-decoration: none;
+    
+}
