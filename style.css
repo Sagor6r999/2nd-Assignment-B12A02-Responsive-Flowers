@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-   
    margin: 0;
 }
 
@@ -11,14 +10,10 @@ body{
     height: auto;
     margin: auto;
 }
-
-
-
-
 /* Header Section Start*/
 .Header-Container{
     max-width: 1140px;
-    height: 71px;
+    height: 82px;
     margin: 0 auto;
     margin-top: 30px;
     display: flex;
@@ -30,8 +25,8 @@ body{
 }
 .header-navbar {
     max-width: 415px;
-    height:60px;
-    margin-top: 18px;
+    height:65px;
+    margin-top: 32px;
 }
 .header-navbar li{
     display: inline;
@@ -61,6 +56,23 @@ body{
     font-size: 1rem;
     text-decoration: none;
 }
+@media screen and (max-width: 576px) {
+  .Header-Container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+  }
+  .header-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .header-navbar li {
+    margin: 5px 0;
+  }
+}
 /* Header Section End*/
 
 
@@ -76,33 +88,42 @@ body{
     height:299px;
     margin-top:155px ;
 }
-
 .Flowers-text h1{
     font-family: "Noto Serif";
     font-size: 4.0625em;
     font-weight: bold;
     margin: 0;
-
 }
 .Flowers-text-color{
     color: rgba(233, 90, 8, 1);
 }
-
 .Flowers-text p{
-
     font-family: "inter";
     font-size: 1.50em;
     font-weight: regular;
     color: rgba(0, 0, 0, 0.5);
-
 }
-
 .Flowers-photo{
     max-width:570px;
     height:355px;
     margin-top:106px ;
 }
-
+@media screen and (max-width: 576px) {
+  .Flowers-Container {  
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    padding: 0 10px;
+  }
+  .Flowers-text {
+    margin-top: 30px;
+  }
+  .Flowers-photo {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }    
+}
 /* Flower Section End*/
 
 /* Plants Section Start*/
@@ -112,14 +133,10 @@ body{
     margin: auto;
     margin-top: 120px;
 }
-
 .plants-Header{
     max-width:1140px;
     height:138px;
-
 }
-
-
 .plants-Header h3{
     text-align: center;
      font-family: "Noto Serif";
@@ -127,7 +144,6 @@ body{
     font-weight: bold;
     margin: 0;
 }
-
 .plants-Header p{
      max-width:888px;
     height:54px;
@@ -138,22 +154,18 @@ body{
     margin: auto;
     text-align: center;
 }
-
 .cards-container{
     max-width:1140px;
-    height:1000px;
+    height:auto;
     display: grid;
     grid-template-columns:repeat(4,1fr);
     gap: 20px;
     margin-top: 50px;
-
 }
-
 .card{
     max-width:270px;
     height:485px;
 }
-
 .card-img {
     max-width:270px;
     height:322px;
@@ -169,7 +181,6 @@ body{
     font-weight: medium;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
-   
     margin: 0;
     margin-top: 19.5px;
     margin-bottom: 10px;
@@ -192,16 +203,23 @@ body{
     border: none;
     margin: auto;
 }
-
 .card-btn a{
    text-decoration: none;
     color: rgba(255, 255, 255, 1);
+}
+@media screen and (max-width: 576px) {
+  .cards-container {
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 10px;
+  }
+  .card {
+    width: 100%;
+  }
 }
 /* Plants Section End*/
 
 
 /* Lover Section Start*/
-
 .Lover-Section{
     margin-top: 200px;
 }
@@ -212,8 +230,6 @@ body{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    
-
 }
 .Lover-imgBadge{
     width:540px;
@@ -221,7 +237,6 @@ body{
     background-image:url(assets/flower-store.png) ;
     background-size: cover;
     background-position: center;
-    
 }
 .Lover-badge{
     width:280px;
@@ -229,39 +244,54 @@ body{
     margin-top: -130px;
     margin-left: 360px;
     /*box-shadow: -4px 10px 4px rgba(0, 0, 0, 0.25);*/
-
 }
 .Lover-text{
      width:540px;
     height:521px;
      margin:38px 0px;
-
-
 }
-
 .Lover-text h3{
     font-family: "Noto Serif";
     font-size: 3.125rem;
     font-weight: bold;
     margin: 0;
-
-
 }
-
 .loverul{
     font-family: "inter";
     font-size: 1.40em;
     font-weight: regular;
     color:rgba(0, 0, 0, 0.5);
 }
-
 .loverul li{
     margin-bottom: 20px;
 }
+@media screen and (max-width: 576px) {
+  .Lover-Container {
+    margin-top: 1250px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 10px;
+  }
+  .Lover-imgBadge {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+  .Lover-badge {
+   display: none;
+  }
+  .Lover-text {
+    width: 100%;
+  }
+  .Lover-text h3{
+    font-family: "Noto Serif";
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px; }
+}
 /* Lover Section End*/
-
-
-
 
 
 /* Deals Section Start*/
@@ -277,19 +307,17 @@ body{
     margin: auto;
     margin-bottom: 120px;
 }
-
 .Deals-text h3{
     text-align: center;
-     font-family: "Noto Serif";
+    font-family: "Noto Serif";
     font-size: 3.125rem;
     font-weight: bold;
     margin: 0;
 }
-
 .Deals-text p{
-     max-width:888px;
+    max-width:888px;
     height:54px;
-     font-family: "inter";
+    font-family: "inter";
     font-size: 1.50em;
     font-weight: regular;
     color: rgba(0, 0, 0, 0.5);
@@ -400,7 +428,51 @@ body{
     color: white; 
     padding-bottom: 5px;
     text-decoration: underline;
-     text-underline-offset: 6px;
+    text-underline-offset: 6px;
+}
+@media screen and (max-width: 576px) {
+.Deals-container{
+    height: auto;
+    margin-bottom: 450px;
+ }
+.Deals-Photos{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+.Deals-Photo-1,
+.Deals-Photo-2,
+.Deals-Photo-33,
+.Deals-Photo-3,
+.offer-text,
+.offer-text-3{
+    width:367px;
+    height:192px;
+    border-radius: 14px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.offer-text-3 h6{
+    text-align: center;
+    font-family: "Noto Serif";
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    margin-top: 75px;
+}
+.offer-text-3 a{
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+    font-family: "inter";
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: white; 
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 }
 /* Deals Section End*/
 
@@ -428,6 +500,8 @@ body{
     font-size: 3.125rem;
     font-weight: bold;
     color: white;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .input-button{
     width:830px;
@@ -436,6 +510,7 @@ body{
     justify-content: center;
 }
 .input-button input{
+    border: none;
     width:635px;
     height:50px;
     font-family: "inter";
@@ -447,12 +522,10 @@ body{
 }
 .join-buttton{
     width:170px;
-    height:55px;
+    height:52px;
     background-color:  rgba(233, 90, 8, 1);
     border: none;
-    /*border: 20px solid rgba(233, 90, 8, 1); */
     color: white;
-    margin-left: -1px;
 }
 .join-buttton a{
     text-decoration: none;
@@ -460,6 +533,26 @@ body{
     font-family: "inter";
     font-size: 1rem;
     font-weight: 600;
+}
+@media screen and (max-width: 576px) {
+.Join-Section{
+     width: 100%;
+  }
+  .joine-text {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .joine-text h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+   }
+  .input-button {
+    width: 100%;
+  }
+  .input-button input,
+  .join-buttton {
+    width: 100%;
+  }
 }
 /* Join Section End*/
 
@@ -491,13 +584,13 @@ body{
 }
 .footer-menu{
     max-width:324px;
-    height:248px;
+    height:auto;
     display: flex;
     gap: 50px;
 }
 .footer-menu ul li{
    list-style: none;
-   margin-bottom:32px ;
+   margin-bottom:32px;
 }
 .footer-menu ul li a{
    text-decoration: none;
@@ -518,5 +611,47 @@ body{
 .footer-social ul li{
     list-style: none;
     align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-Container {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+  .footer-logo-text{
+    padding-left: 35px;
+    margin-bottom: 20px;
+  }
+  .footer-menu {
+    flex-direction: column;
+    margin:0;
+    gap: 0px;
+  }
+  .ul1{
+    margin-bottom:0;
+  }
+.ul1 li{
+    margin-top:35px;
+    margin-bottom:0;
+  }
+  .ul2{
+    margin-top:0;
+  }
+.ul2 li{
+    margin-top:0;
+    margin-bottom: 35px;
+}
+.ul2 li a,
+.ul1 li a{
+    font-family: "inter";
+    font-size: 1.5rem;
+}
+ .footer-menu ul li {
+   text-align: left;
+  }
+.footer-social{
+    margin-bottom: 50px;
+}
 }
 /* Footer Section End*/
