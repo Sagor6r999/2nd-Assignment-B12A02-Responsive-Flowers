@@ -57,21 +57,17 @@ body{
     text-decoration: none;
 }
 @media screen and (max-width: 576px) {
-  .Header-Container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    .Header-Container {
+    width: 420px;
     height: auto;
   }
   .header-navbar {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 35px;
   }
-  .header-navbar li {
-    margin: 5px 0;
-  }
+ .header-navbar li:nth-child(-n+3){
+    display:none;
+ }
 }
 /* Header Section End*/
 
