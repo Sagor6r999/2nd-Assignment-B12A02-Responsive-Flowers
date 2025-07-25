@@ -1,39 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-.noto-serif-{
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-
-.inter- {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-
-
 body{
-   max-width:1440px;
+   
    margin: 0;
-    
-
 }
 
-section{
+.section{
     max-width:1440px;
-   margin: 0;
+    height: auto;
+    margin: auto;
 }
 
+
+
+
+/* Header Section Start*/
 .Header-Container{
     max-width: 1140px;
     height: 71px;
@@ -41,24 +23,20 @@ section{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-
 }
 .header-logo{
     max-width: 135px;
     height: 82px;
 }
-
 .header-navbar {
- max-width: 415px;
+    max-width: 415px;
     height:60px;
     margin-top: 18px;
 }
-
 .header-navbar li{
-display: inline;
-list-style: none;
-margin-left: 30px;
-
+    display: inline;
+    list-style: none;
+    margin-left: 30px;
 }
 .Nav-iteams{
     text-decoration: none;
@@ -68,29 +46,25 @@ margin-left: 30px;
     font-size: 1rem;
     font-weight: small;
     color:rgba(137, 135, 161, 1);
-    
 }
-
-
 .item-bold{
-      font-weight: Bold;
-      font-family: "inter";
+    font-weight: Bold;
+    font-family: "inter";
     font-size: 1rem;
-      text-decoration: none;
-      color: rgba(37, 36, 50, 1);
+    text-decoration: none;
+    color: rgba(37, 36, 50, 1);
 }
 .item-color{
     color: rgba(37, 36, 50, 1);
-   font-weight: small;
-      font-family: "inter";
+    font-weight: small;
+    font-family: "inter";
     font-size: 1rem;
-      text-decoration: none;
+    text-decoration: none;
 }
+/* Header Section End*/
 
 
-
-
-
+/* Flower Section Start*/
 .Flowers-Container{
     max-width:1140px;
     height:461px;
@@ -129,9 +103,9 @@ margin-left: 30px;
     margin-top:106px ;
 }
 
+/* Flower Section End*/
 
-
-
+/* Plants Section Start*/
 .Plants-Container{
     max-width:1140px;
     height:1187px;
@@ -223,23 +197,14 @@ margin-left: 30px;
    text-decoration: none;
     color: rgba(255, 255, 255, 1);
 }
+/* Plants Section End*/
 
 
-
-
-
-
-
-
-
-
-
-
+/* Lover Section Start*/
 
 .Lover-Section{
-     margin-top: 200px;
+    margin-top: 200px;
 }
-
 .Lover-Container{
     margin-top: 200px;
     max-width:1140px;
@@ -250,8 +215,6 @@ margin-left: 30px;
     
 
 }
-
-
 .Lover-imgBadge{
     width:540px;
     height:597px;
@@ -295,17 +258,15 @@ margin-left: 30px;
 .loverul li{
     margin-bottom: 20px;
 }
+/* Lover Section End*/
 
 
 
 
 
-
-
-
-
-
+/* Deals Section Start*/
 .Deals-container{
+    margin: auto;
      max-width:1440px;
     height:682px;
     margin-top: 133px;
@@ -335,7 +296,6 @@ margin-left: 30px;
     margin: auto;
     text-align: center;
 }
-
 .Deals-Photos{
     border-radius: 14px;
     border-radius: 14px;
@@ -344,10 +304,7 @@ margin-left: 30px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-
-
 }
-
 .Deals-Photo-1{
     border-radius: 14px;
     width:367px;
@@ -365,23 +322,16 @@ margin-left: 30px;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
-
-
-
-
 .offer-text h6{
     text-align: center;
-     font-family: "Noto Serif";
+    font-family: "Noto Serif";
     font-size: 1.25rem;
     font-weight: bold;
     color: white;
     margin: 0;
     margin-top: 75px;
 }
-
 .offer-text a{
-
     margin-top: 10px;
     margin: auto;
     text-align: center;
@@ -393,9 +343,6 @@ margin-left: 30px;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
-
-
-
 .Deals-Photo-12{
     width:367px;
     height:423px;
@@ -408,9 +355,7 @@ margin-left: 30px;
     background-image: url(assets/deal-ana.png);
     background-repeat: no-repeat;
     margin-top: 25px;
-    
 }
-
 .offer-text-2{
     border-radius: 14px;
     width:367px;
@@ -420,16 +365,12 @@ margin-left: 30px;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
-
-
 .Deals-Photo-3{
     border-radius: 14px;
     width:753px;
     height:424px;
     background-image: url(assets/deal-zabo.png);
 }
-
 .offer-text-3{
     border-radius: 14px;
     width:753px;
@@ -439,22 +380,16 @@ margin-left: 30px;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
-
-
 .offer-text-3 h6{
     text-align: center;
-     font-family: "Noto Serif";
+    font-family: "Noto Serif";
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
     margin: 0;
-    margin-top: 175px;
-    
+    margin-top: 175px;  
 }
-
 .offer-text-3 a{
-
     margin-top: 10px;
     margin: auto;
     text-align: center;
@@ -467,18 +402,18 @@ margin-left: 30px;
     text-decoration: underline;
      text-underline-offset: 6px;
 }
+/* Deals Section End*/
 
 
+/* Join Section Start*/
 .Join-Section{
+    margin:auto;
     margin-top: 120px;
     max-width:1440px;
     height:533px;
     background-image: url(assets/news-letter-bg.png);
     position: relative;
-    
-
 }
-
 .joine-text{
     width:830px;
     height:140px;
@@ -487,15 +422,12 @@ margin-left: 30px;
     margin-left: 305px;
     position: absolute;
 }
-
-
 .joine-text h3{
     text-align: center;
     font-family: "Noto Serif";
     font-size: 3.125rem;
     font-weight: bold;
     color: white;
-
 }
 .input-button{
     width:830px;
@@ -503,7 +435,6 @@ margin-left: 30px;
     display: flex;
     justify-content: center;
 }
-
 .input-button input{
     width:635px;
     height:50px;
@@ -514,7 +445,6 @@ margin-left: 30px;
     padding-left: 15px;
     margin: 0;
 }
-
 .join-buttton{
     width:170px;
     height:55px;
@@ -524,7 +454,6 @@ margin-left: 30px;
     color: white;
     margin-left: -1px;
 }
-
 .join-buttton a{
     text-decoration: none;
     color: white;
@@ -532,17 +461,10 @@ margin-left: 30px;
     font-size: 1rem;
     font-weight: 600;
 }
+/* Join Section End*/
 
 
-
-
-
-
-
-
-
-
-
+/* Footer Section Start*/
 .footer-Container{
     max-width:1120px;
     height:248px;
@@ -550,88 +472,51 @@ margin-left: 30px;
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
-
 }
-
 .footer-logo-text{
-     max-width:360px;
+    max-width:360px;
     height:180px;
-
 }
 .footer-logo-text img{
     max-width:185px;
     height:82px;
-
 }
 .footer-logo-text p{
-     max-width:360px;
+    max-width:360px;
     height:180px;
     font-family: "inter";
     font-size: 1.375rem;
     font-weight: regular;
     color: rgba(0, 0, 0, 0.5);
-
-
 }
-
-
 .footer-menu{
     max-width:324px;
     height:248px;
     display: flex;
     gap: 50px;
 }
-
-.footer-menu ul{
-
-
-
-
-}
-
 .footer-menu ul li{
    list-style: none;
    margin-bottom:32px ;
-
-
 }
 .footer-menu ul li a{
    text-decoration: none;
    color: rgba(0, 0, 0, 0.5);
-
 }
-
-
-
-
 .footer-social{
     width:216px;
     height:36px;
-   
-
 }
-
 .footer-social ul{
     margin:0px;
-
-     display:flex;
-     flex-direction: row;
-     gap: 20px;
-     justify-content: center;
-     align-items: center;
-
-
-
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-
-
 .footer-social ul li{
     list-style: none;
     align-items: center;
-
-
-    
-
-
 }
-
+/* Footer Section End*/
