@@ -57,17 +57,24 @@ body{
     text-decoration: none;
 }
 @media screen and (max-width: 576px) {
-    .Header-Container {
-    width: 420px;
+    .section{
+    max-width:576px;
     height: auto;
-  }
-  .header-navbar {
+    margin: auto;
+    }
+    .Header-Container {
+    width: 470px;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    }
+    .header-navbar {
     align-items: center;
-    margin-top: 35px;
-  }
- .header-navbar li:nth-child(-n+3){
+    margin-top: 40px;
+    }
+    .header-navbar li:nth-child(-n+3){
     display:none;
- }
+    }
 }
 /* Header Section End*/
 
@@ -189,7 +196,6 @@ body{
     text-align: center;
     margin: 0px;
     margin-bottom: 20px;
-
 }
 .card-btn{
     width:270px;
@@ -239,11 +245,10 @@ body{
     height:280px;
     margin-top: -130px;
     margin-left: 360px;
-    /*box-shadow: -4px 10px 4px rgba(0, 0, 0, 0.25);*/
 }
 .Lover-text{
      width:540px;
-    height:521px;
+    height:auto;
      margin:38px 0px;
 }
 .Lover-text h3{
@@ -263,7 +268,7 @@ body{
 }
 @media screen and (max-width: 576px) {
   .Lover-Container {
-    margin-top: 1250px;
+    margin-top: 1100px;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -293,7 +298,7 @@ body{
 /* Deals Section Start*/
 .Deals-container{
     margin: auto;
-     max-width:1440px;
+    max-width:1440px;
     height:682px;
     margin-top: 133px;
 }
@@ -428,8 +433,10 @@ body{
 }
 @media screen and (max-width: 576px) {
 .Deals-container{
+    width: 576px;
     height: auto;
-    margin-bottom: 450px;
+    margin: auto;
+    margin-bottom: 300px;
  }
 .Deals-Photos{
     flex-direction: column;
@@ -448,6 +455,9 @@ body{
     margin: auto;
     margin-bottom: 20px;
 }
+.offer-text-3{ background-image:url(assets/deal-zabo.png);
+}
+
 .offer-text-3 h6{
     text-align: center;
     font-family: "Noto Serif";
